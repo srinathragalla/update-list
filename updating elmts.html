@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Javascript is a scripting language</p>
+<h2 id="delete">update list</h2>
+
+<button onclick="adding()">Add</button>
+<button onclick="removing()">remove</button>
+
+<script>
+function adding() {
+  var para = document.createElement("P");
+  para.innerText = "update list";
+  document.body.appendChild(para);
+  para.style.color="purple";
+
+}
+
+function removing() {
+  var h2 = document.getElementById("delete");
+  h2.remove();
+}
+</script>
+
+</body>
+</html>
